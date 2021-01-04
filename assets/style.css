@@ -1,0 +1,162 @@
+@font-face {
+    font-family: "monobloc";
+    src: url('Monobloc-Regular_web.woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "monobloc";
+    src: url('Monobloc-Bold_web.woff2');
+    font-weight: 950;
+    font-style: normal;
+}
+
+body {
+    font-family: 'monobloc';
+    font-variation-settings: "wght" 400;
+    margin: 0px;
+    padding: 0px;
+    font-size: 2rem;
+  }
+
+header {
+    font-size: 10rem;
+    background: black;
+    color: white;
+    text-align: center;
+    height: 10rem;
+}
+
+.freestanding {
+    border: 2px solid black;
+    background: white;
+    padding: 10px 8px 8px 8px;
+    text-align: center;
+    width: 15rem;
+    position: absolute;
+    box-shadow: 5px 10px #00000027;
+}
+
+.letter {
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    background: white;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 4rem 3rem 5rem 3rem;
+    width: 45rem;
+    font-size: 1.5rem;
+}
+
+.backgroundgrid {
+    position: absolute;
+    top: 38rem;
+    width: 100%;
+    height: 5rem;
+    display: grid;
+
+    grid-template-columns: repeat(21, 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: 0;
+}
+
+h2:nth-child(2n) {
+    border: 2px solid black;
+    background: white;
+
+}
+
+h2:nth-child(2n-1) {
+    border: 2px solid black;
+    background:black;
+}
+
+.flex {
+    display: flex;
+}
+
+.flexchild {
+    padding: 4rem 6rem 4rem 6rem;
+    width: 50%;
+    height: 90%;
+}
+
+
+button{
+    border: 2px solid black;
+    padding: 10px 20px 4px 20px;
+    font-family: 'monobloc';
+    font-variation-settings: "wght" 400;
+    font-size: 1.5rem;
+    background: white;
+    transform: rotate(6deg);
+    box-shadow: 5px 10px #00000027
+}
+
+button:hover {
+    background: rgb(136, 136, 136);
+    color: black;
+    transform: rotate(-6deg);
+}
+
+button:active {
+    background: black;
+    color: white;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: black; 
+    border: 2px solid black;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: white; 
+    border: 2px solid black;
+  }
+
+
+
+/*
+	 CSS-Tricks Table
+	 by Chris Coyier
+	 http://css-tricks.com
+*/
+
+td:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+
+::selection { background: transparent; }
+::-moz-selection { background: transparent; }
+
+#drawing-table { width: 500px; height: 700px; border-collapse: collapse; }
+#drawing-table td { border: 2px solid black }
+
+#clear { float: right; }
+
+#color-selector p { clear: both; }
+
+.color { float: left; position: relative;  border: 2px dotted #ccc; margin: 0 20px 40px 0; width: 50px; height: 50px; -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; }
+.black { background: black; }
+.color input { position: absolute; top: 60px; left: 20px; width: 14px; height: 14px; background: url(../images/colordot.png) no-repeat; border: 0; }
+.colorpicker_submit { color: white; }
+.colorpicker { z-index: 20; }
+
+.selected { border: 2px solid #ccc; }
+
+#table-wrap { position: relative; width: 500px; }
+#table-wrap table { position: relative; z-index: 10; }
+
+#toggle-tracing-mode { display: none; }
+
+#html-wrap textarea { width: 100%; height: 50px; overflow: auto; margin: 0 0 10px 0; }
